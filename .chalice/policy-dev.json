@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "524f9f0d631a4c18a0c32b99157a3bf9",
+      "Effect": "Allow",
+      "Action": [
+        "rekognition:DetectFaces"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Resource": "arn:aws:logs:*:*:*",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow"
+    }
+  ]
+}
